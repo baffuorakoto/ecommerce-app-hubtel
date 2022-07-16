@@ -1,0 +1,18 @@
+﻿@page "/Signup"
+@model ecommerce_app.Pages.SignupModel
+
+
+<h1>Signup </h1>
+
+
+
+<form method="post">
+    <div class="col-6">
+        <h4>Enter your phone number</h4>
+        <div class="form-group">
+            <input asp-for="PhoneNumber" type="text" class="form-control" />
+        </div>
+        <button class="btn btn-primary">Send</button>
+    </div>
+    
+</form>

@@ -1,0 +1,29 @@
+﻿@page "/ratings"
+@model ecommerce_app.Pages.RatingsModel
+
+
+<h1>Ratings</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ItemId</th>
+            <th scope="col">Comments</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Rated by</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var rating in Model.Ratings)
+        {
+        <tr>
+            <th scope="row">@rating.ItemId</th>
+            <td>@rating.Comment</td>
+            <td>@rating.Stars / 5</td>
+            <td>@rating.CreatedBy</td>
+        </tr>
+        }
+
+       
+    </tbody>
+</table>

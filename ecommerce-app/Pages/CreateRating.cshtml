@@ -1,0 +1,21 @@
+﻿@page "/add-rating"
+@model ecommerce_app.Pages.CreateRatingModel
+@{
+}
+<h1>Please rate our item! </h1>
+
+
+<form method="post">
+    <div class="col-6">
+        <h4>Please enter your rating below!</h4>
+
+        <div class="form-group">
+            <input asp-for="Rating.Stars" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <textarea asp-for="Rating.Comment" type="text" class="form-control"></textarea>
+        </div>
+        <button class="btn btn-primary">Send</button>
+    </div>
+
+</form>
