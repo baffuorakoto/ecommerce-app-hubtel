@@ -13,7 +13,7 @@ namespace ecommerce_app.Pages.Services
 {
     public class RatingService : IRating
     {
-        private HttpClient _httpClient =  new HttpClient();
+        private HttpClient _httpClient = new HttpClient();
         private readonly JsonSerializer jsonSerializer = new JsonSerializer();
         public RatingResult _rating = new RatingResult();
         public AuthTokenResponse _authToken = new AuthTokenResponse();
